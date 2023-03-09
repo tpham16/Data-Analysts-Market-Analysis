@@ -1,4 +1,4 @@
-from sqlalchemy import create_engine, func
+from sqlalchemy import create_engine
 from sqlalchemy.ext.automap import automap_base
 from sqlalchemy.orm import Session
 import pandas as pd
@@ -16,7 +16,6 @@ salaries = Base.classes.salaries
 skills = Base.classes.skills
 
 session = Session(engine)
-engine.dispose()
 
 # build queries to pull all amazon data
 jobs_result = session.query(jobs)
@@ -35,3 +34,6 @@ tot_merge = pd.merge(m1, skills_df, how = "inner", on = ["id"])
 
 # Write this joined dataframe to the data / folder
 tot_merge.to_csv("data/joined_data.csv", index = False)
+
+# dispose engine
+engine.dispose()
