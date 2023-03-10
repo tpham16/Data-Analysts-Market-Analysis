@@ -10,7 +10,7 @@ This project aims to generate a pipeline and analysis of real job data that was 
 * sklearn
 
 ## Methodology
-A step by st ep of what you did in the project.
+
 
 ## Visuals
 Visuals of distribution and what you noticed about visualization
