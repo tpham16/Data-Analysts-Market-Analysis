@@ -76,7 +76,7 @@ cleaned_salaries.to_csv('data/cleaned_data.csv')
 After extracting, cleaning and transforming the dataset, I performed statistic tests and visualizations using seaborn, matplotlib and pandas. Visualizations and statistics can be accessed in eda.ipynb. A predictive model was created using sklearn to provide insight on the predictive power of data analyst salaries. 
 ## Visuals
 A standard salary distribution of data analyst jobs in the United States showed a right shewed distribution. 
-![image](https://github.com/tpham16/Data-Analysts-Market-Analysis-/blob/1c311752c2102c96c86bf086f14cdf0799f8b7d6/images/std_salaries_dis.png)
+![image](https://github.com/tpham16/Data-Analysts-Market-Analysis-/blob/1c311752c2102c96c86bf086f14cdf0799f8b7d6/images/std_salaries_dis.png){: width="50%"}
 
 A box plot of this distribution showed that the median salary is a 90000-100000. While the length of the whiskers are about the same, there are a significant amount of outliers.
 
