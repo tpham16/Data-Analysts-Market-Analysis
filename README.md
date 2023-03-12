@@ -111,7 +111,7 @@ A box-plot of 3 selected comapanies showed various medians of salary of the foll
 
 <img src="https://github.com/tpham16/Data-Analysts-Market-Analysis-/blob/1c311752c2102c96c86bf086f14cdf0799f8b7d6/images/boxplotfor3companies.png" alt="image" width="500"/>
 
-A bar graph showed that Upwork, Cox Communication and Edward Jones are the most-hiring companies/ 
+A bar graph showed that Upwork, Cox Communication and Edward Jones are the most-hiring companies. 
 
 <img src="https://github.com/tpham16/Data-Analysts-Market-Analysis-/blob/1c311752c2102c96c86bf086f14cdf0799f8b7d6/images/top_companies.png" alt="image" width="500"/>
 
