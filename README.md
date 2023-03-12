@@ -78,12 +78,11 @@ After extracting, cleaning and transforming the dataset, I performed statistic t
 A standard salary distribution of data analyst jobs in the United States showed a right shewed distribution. 
 ![image](https://github.com/tpham16/Data-Analysts-Market-Analysis-/blob/1c311752c2102c96c86bf086f14cdf0799f8b7d6/images/std_salaries_dis.png)
 
-<img src="https://github.com/tpham16/Data-Analysts-Market-Analysis-/blob/1c311752c2102c96c86bf086f14cdf0799f8b7d6/images/std_salaries_dis.png" alt="image" width="250"/>
-
+<img src="https://github.com/tpham16/Data-Analysts-Market-Analysis-/blob/1c311752c2102c96c86bf086f14cdf0799f8b7d6/images/std_salaries_dis.png" alt="image" width="500"/>
 
 A box plot of this distribution showed that the median salary is a 90000-100000. While the length of the whiskers are about the same, there are a significant amount of outliers.
 
-![image](https://github.com/tpham16/Data-Analysts-Market-Analysis-/blob/1c311752c2102c96c86bf086f14cdf0799f8b7d6/images/std_salaries_boxplot.png)
+<img src="https://github.com/tpham16/Data-Analysts-Market-Analysis-/blob/1c311752c2102c96c86bf086f14cdf0799f8b7d6/images/std_salaries_boxplot.png" alt="image" width="500"/>
 
 A Kolmogorov-Smirnov test resulted in a p-value less than 0.05, meaning that the distribution of salaries significantly deviates from the expected distribution. 
 
@@ -91,15 +90,15 @@ A Kolmogorov-Smirnov test resulted in a p-value less than 0.05, meaning that the
 
 A box-plot comparing remote vs non-remote jobs showed that the median of non 'work from home' non-remote jobs is higher than remote jobs. However, the box-plot indicated a larger right whisker for remote positions than non-remote positions. 
 
-![image](https://github.com/tpham16/Data-Analysts-Market-Analysis-/blob/1c311752c2102c96c86bf086f14cdf0799f8b7d6/images/nonremotevsremote_jobs_boxplot.png)
+<img src="https://github.com/tpham16/Data-Analysts-Market-Analysis-/blob/1c311752c2102c96c86bf086f14cdf0799f8b7d6/images/nonremotevsremote_jobs_boxplot.png" alt="image" width="500"/>
 
 A bar graph showed that the top skills for a data analysts were SQL, Tableau, Excel, and Python. 
 
-![image](https://github.com/tpham16/Data-Analysts-Market-Analysis-/blob/1c311752c2102c96c86bf086f14cdf0799f8b7d6/images/ranked_skills.png)
+<img src="https://github.com/tpham16/Data-Analysts-Market-Analysis-/blob/1c311752c2102c96c86bf086f14cdf0799f8b7d6/images/ranked_skills.png" alt="image" width="500"/>
 
 A box plot which compared jobs that listed SQL as a requirement showed that median salary is higher than jobs that did not. 
 
-![image](https://github.com/tpham16/Data-Analysts-Market-Analysis-/blob/1c311752c2102c96c86bf086f14cdf0799f8b7d6/images/sql_salaries.png)
+<img src="https://github.com/tpham16/Data-Analysts-Market-Analysis-/blob/1c311752c2102c96c86bf086f14cdf0799f8b7d6/images/sql_salaries.png" alt="image" width="500"/>
 
 A KS test of salaries of jobs requiring SQL resulted in a p-value less than 0.05. 
 
@@ -107,15 +106,15 @@ A KS test of salaries of jobs requiring SQL resulted in a p-value less than 0.05
 
 A bar graph showed that top hiring locations were remote positions, followed by United States and Wichita, KS. 
 
-![image](https://github.com/tpham16/Data-Analysts-Market-Analysis-/blob/1c311752c2102c96c86bf086f14cdf0799f8b7d6/images/top_loc.png)
+<img src="https://github.com/tpham16/Data-Analysts-Market-Analysis-/blob/1c311752c2102c96c86bf086f14cdf0799f8b7d6/images/top_loc.png" alt="image" width="500"/>
 
 A box-plot of 3 selected comapanies showed various medians of salary of the following companies: Citi, Edward Jones, and Apex Systems. According to this box-plot, Edward Jones has the highest median pay. 
 
-![image](https://github.com/tpham16/Data-Analysts-Market-Analysis-/blob/1c311752c2102c96c86bf086f14cdf0799f8b7d6/images/boxplotfor3companies.png)
+<img src="https://github.com/tpham16/Data-Analysts-Market-Analysis-/blob/1c311752c2102c96c86bf086f14cdf0799f8b7d6/images/boxplotfor3companies.png" alt="image" width="500"/>
 
 A bar graph showed that Upwork, Cox Communication and Edward Jones are the most-hiring companies/ 
 
-![image](https://github.com/tpham16/Data-Analysts-Market-Analysis-/blob/1c311752c2102c96c86bf086f14cdf0799f8b7d6/images/top_companies.png)
+<img src="https://github.com/tpham16/Data-Analysts-Market-Analysis-/blob/1c311752c2102c96c86bf086f14cdf0799f8b7d6/images/top_companies.png" alt="image" width="500"/>
 
 
 ## Results
