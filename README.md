@@ -16,7 +16,7 @@ This project aims to generate a pipeline and analysis of real data job data that
 ## Methodology
 In order to extract data for analysis, I ultized sql-alchemy to extract jobs, salaries, and skills tables from the Amazon RDS postgres database. After pulling these tables, I converted the tables into 3 pandas dataframe, joined them togther and saved them into a CSV file which can be accessed in /data.
 
-'''python
+```python
 from sqlalchemy import create_engine
 from sqlalchemy.ext.automap import automap_base
 from sqlalchemy.orm import Session
@@ -49,10 +49,10 @@ m1 = pd.merge(salaries_df, jobs_df, how = "inner", on = ["id"])
 tot_merge = pd.merge(m1, skills_df, how = "inner", on = ["id"])
 # Write this joined dataframe to the data / folder
 tot_merge.to_csv("data/joined_data.csv", index = False)
-'''
+```
 After extracting the data, I cleaned the data by filling in missing values. I transformed the daya by converting the categorical data into numerical data. I accomplished this by creating a new column for each possible skill specified in the description_tokens column. I utlized scikit-learn to perform one-hot encoding.
 
-'''python
+```python
 # clean data
 job_df['work_from_home'].fillna(False, inplace = True)
 
@@ -71,16 +71,16 @@ enc_skill_df = job_df.join(pd.DataFrame(binary_columns, columns=mlb.classes_))
 
 cleaned_salaries = enc_skill_df.dropna(subset=['salary_standardized'])
 cleaned_salaries.to_csv('data/cleaned_data.csv')
-'''
+```
 
 After extracting, cleaning and transforming the dataset, I performed statistic tests and visualizations using seaborn, matplotlib and pandas. Visualizations and statistics can be accessed in eda.ipynb. A predictive model was created using sklearn to provide insight on the predictive power of data analyst salaries. 
 ## Visuals
 A standard salary distribution of data analyst jobs in the United States showed a right shewed distribution. 
-! [image] [https://github.com/tpham16/Data-Analysts-Market-Analysis-/blob/1c311752c2102c96c86bf086f14cdf0799f8b7d6/images/std_salaries_dis.png]
+! [image] (https://github.com/tpham16/Data-Analysts-Market-Analysis-/blob/1c311752c2102c96c86bf086f14cdf0799f8b7d6/images/std_salaries_dis.png)
 
 A box plot of this distribution showed that the median salary is a 90000-100000. While the length of the whiskers are about the same, there are a significant amount of outliers.
 
-! [image] [https://github.com/tpham16/Data-Analysts-Market-Analysis-/blob/1c311752c2102c96c86bf086f14cdf0799f8b7d6/images/std_salaries_boxplot.png]
+! [image] (https://github.com/tpham16/Data-Analysts-Market-Analysis-/blob/1c311752c2102c96c86bf086f14cdf0799f8b7d6/images/std_salaries_boxplot.png)
 
 A Kolmogorov-Smirnov test resulted in a p-value less than 0.05, meaning that the distribution of salaries significantly deviates from the expected distribution. 
 
@@ -88,15 +88,15 @@ A Kolmogorov-Smirnov test resulted in a p-value less than 0.05, meaning that the
 
 A box-plot comparing remote vs non-remote jobs showed that the median of non 'work from home' non-remote jobs is higher than remote jobs. However, the box-plot indicated a larger right whisker for remote positions than non-remote positions. 
 
-! [image] [https://github.com/tpham16/Data-Analysts-Market-Analysis-/blob/1c311752c2102c96c86bf086f14cdf0799f8b7d6/images/nonremotevsremote_jobs_boxplot.png]
+! [image] (https://github.com/tpham16/Data-Analysts-Market-Analysis-/blob/1c311752c2102c96c86bf086f14cdf0799f8b7d6/images/nonremotevsremote_jobs_boxplot.png)
 
 A bar graph showed that the top skills for a data analysts were SQL, Tableau, Excel, and Python. 
 
-! [image] [https://github.com/tpham16/Data-Analysts-Market-Analysis-/blob/1c311752c2102c96c86bf086f14cdf0799f8b7d6/images/ranked_skills.png]
+! [image] (https://github.com/tpham16/Data-Analysts-Market-Analysis-/blob/1c311752c2102c96c86bf086f14cdf0799f8b7d6/images/ranked_skills.png)
 
 A box plot which compared jobs that listed SQL as a requirement showed that median salary is higher than jobs that did not. 
 
-! [image] [https://github.com/tpham16/Data-Analysts-Market-Analysis-/blob/1c311752c2102c96c86bf086f14cdf0799f8b7d6/images/sql_salaries.png]
+! [image] (https://github.com/tpham16/Data-Analysts-Market-Analysis-/blob/1c311752c2102c96c86bf086f14cdf0799f8b7d6/images/sql_salaries.png)
 
 A KS test of salaries of jobs requiring SQL resulted in a p-value less t han 0.05. 
 
@@ -104,15 +104,15 @@ A KS test of salaries of jobs requiring SQL resulted in a p-value less t han 0.0
 
 A bar graph showed that top hiring locations were remote positions, followed by United States and Wichita, KS. 
 
-! [image] [https://github.com/tpham16/Data-Analysts-Market-Analysis-/blob/1c311752c2102c96c86bf086f14cdf0799f8b7d6/images/top_loc.png]
+! [image] (https://github.com/tpham16/Data-Analysts-Market-Analysis-/blob/1c311752c2102c96c86bf086f14cdf0799f8b7d6/images/top_loc.png)
 
 A box-plot of 3 selected comapanies showed various medians of salary of the following companies: Citi, Edward Jones, and Apex Systems. According to this box-plot, Edward Jones has the highest median pay. 
 
-! [image] [https://github.com/tpham16/Data-Analysts-Market-Analysis-/blob/1c311752c2102c96c86bf086f14cdf0799f8b7d6/images/boxplotfor3companies.png]
+! [image] (https://github.com/tpham16/Data-Analysts-Market-Analysis-/blob/1c311752c2102c96c86bf086f14cdf0799f8b7d6/images/boxplotfor3companies.png)
 
 A bar graph showed that Upwork, Cox Communication and Edward Jones are the most-hiring companies/ 
 
-! [image] [https://github.com/tpham16/Data-Analysts-Market-Analysis-/blob/1c311752c2102c96c86bf086f14cdf0799f8b7d6/images/top_companies.png]
+! [image] (https://github.com/tpham16/Data-Analysts-Market-Analysis-/blob/1c311752c2102c96c86bf086f14cdf0799f8b7d6/images/top_companies.png)
 
 
 ## Results
