@@ -50,7 +50,7 @@ tot_merge = pd.merge(m1, skills_df, how = "inner", on = ["id"])
 # Write this joined dataframe to the data / folder
 tot_merge.to_csv("data/joined_data.csv", index = False)
 ```
-After extracting the data, I cleaned the data by filling in missing values. I transformed the daya by converting the categorical data into numerical data. I accomplished this by creating a new column for each possible skill specified in the description_tokens column. I utlized scikit-learn to perform one-hot encoding.
+After extracting the data, I cleaned the data by filling in missing values. I transformed the data by converting the categorical data into numerical data. I accomplished this by creating a new column for each possible skill specified in the description_tokens column. I utlized scikit-learn to perform one-hot encoding.
 
 ```python
 # clean data
